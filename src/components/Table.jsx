@@ -65,6 +65,7 @@ const Table = () => {
 
   const handlePageChange = (page) => {
     setCurrentPage(page);
+		setFlag('hrno')
   };
 
   useEffect(() => {
