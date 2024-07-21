@@ -16,9 +16,9 @@ const Hero = () => {
             each page and add pagination to navigate between different pages.
           </p>
           <div className="flex justify-center">
-            <button className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            <a href="https://github.com/Sam-822/Dynamic-List-Viewer" target="_blank" className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
               View Source code <i className=" ml-2 bi bi-github"></i>
-            </button>
+            </a>
             <a
               href="#table"
               className="ml-4 cursor-pointer inline-flex text-gray-700 bg-gray-100 border-0 py-2 px-6 focus:outline-none hover:bg-gray-200 rounded text-lg "
