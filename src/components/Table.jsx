@@ -20,29 +20,6 @@ const Table = () => {
   const [dateRange, setDateRange] = useState([null, null]);
   const [dateDropdownFlag, setDateDropdownFlag] = useState(false);
 
-  const range = (start, end, step = 1) => {
-    const array = [];
-    for (let i = start; i < end; i += step) {
-      array.push(i);
-    }
-    return array;
-  };
-  const years = range(1990, new Date().getFullYear() + 1, 1);
-  const months = [
-    "January",
-    "February",
-    "March",
-    "April",
-    "May",
-    "June",
-    "July",
-    "August",
-    "September",
-    "October",
-    "November",
-    "December",
-  ];
-
   // Fetch data from data.json
   const fetchData = async () => {
     const response = await fetch("/data.json");
@@ -293,7 +270,7 @@ const Table = () => {
                 >
                   STATE
                   <span
-                    className={`absolute top-4 ${
+                    className={`absolute top-7 -right-8 ${
                       dropFlag ? "" : "hidden"
                     } z-10`}
                     onClick={(event) => event.stopPropagation()}
@@ -348,7 +325,7 @@ const Table = () => {
                 >
                   DATE JOINED
                   <div
-                    className={`bg-white text-black absolute rounded p-3 w-72 flex items-start flex-col ${
+                    className={`bg-white text-black absolute top-7 left-9 rounded p-3 w-72 flex items-start flex-col ${
                       dateDropdownFlag ? "" : "hidden"
                     } `}
                     onClick={(event) => event.stopPropagation()}
