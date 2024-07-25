@@ -16,7 +16,11 @@ const Hero = () => {
             each page and add pagination to navigate between different pages.
           </p>
           <div className="flex justify-center">
-            <a href="https://github.com/Sam-822/Dynamic-List-Viewer" target="_blank" className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
+            <a
+              href="https://github.com/Sam-822/Dynamic-List-Viewer"
+              target="_blank"
+              className="inline-flex text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg"
+            >
               View Source code <i className=" ml-2 bi bi-github"></i>
             </a>
             <a
@@ -29,12 +33,7 @@ const Hero = () => {
           </div>
         </div>
         <div className="lg:max-w-lg lg:w-full md:w-1/2 w-5/6">
-          {/* <img
-            className="object-cover object-center rounded"
-            alt="hero"
-            src="https://dummyimage.com/720x600"
-          /> */}
-					<Logo />
+          <Logo />
         </div>
       </div>
     </section>

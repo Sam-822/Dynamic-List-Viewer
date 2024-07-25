@@ -2,27 +2,27 @@
 @tailwind components;
 @tailwind utilities;
 
-*{
-	scroll-behavior: smooth !important;
+* {
+  scroll-behavior: smooth !important;
 }
 
-.move-down{
-	animation: wobble 0.7s linear infinite;
+.move-down {
+  animation: wobble 0.7s linear infinite;
 }
 @keyframes wobble {
-	0%{
-		transform: translateY(0px);
-	}
-	50%{
-		transform: translateY(4px);
-	}
-	100%{
-		transform: translateY(0px);
-	}
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(4px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 
-*{
-	--cube-size: 300px
+* {
+  --cube-size: 300px;
 }
 
 .cube-container {
@@ -43,7 +43,7 @@
   width: var(--cube-size);
   height: var(--cube-size);
   background: rgba(0, 0, 0, 0.2);
-	border: 2px solid black;
+  border: 2px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -77,4 +77,14 @@
   to {
     transform: rotateX(360deg) rotateY(360deg);
   }
+}
+
+.str0 {
+  stroke: #2b2a29;
+  stroke-width: 57.21;
+  stroke-miterlimit: 22.9256;
+}
+
+.fil0 {
+  fill: #fefefe;
 }
