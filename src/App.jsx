@@ -4,7 +4,7 @@ import Table from "./components/Table";
 
 function App() {
   return (
-    <main className="dark:bg-slate-700 dark:text-white">
+    <main>
       <Hero />
       <Table />
     </main>
